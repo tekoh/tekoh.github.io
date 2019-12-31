@@ -3,11 +3,18 @@
     text-decoration: none;
 }
 
-html, body {
+html {
     background-image: url(imgs/background.jpg);
-    background-size : 100%;
+    background-size : cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-position: absolute;
     background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+body {
     text-align: center;
 }
 
