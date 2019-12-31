@@ -4,6 +4,7 @@
 }
 
 html {
+    background-color: black;
     background-image: url(imgs/background.jpg);
     background-size : cover;
     -webkit-background-size: cover;
@@ -19,13 +20,14 @@ body {
 }
 
 #content {
-    position: fixed;
-    top: 50%;
+    position: absolute;
     left: 50%;
-    width: 30em;
-    height:18em;
-    margin-top: -6em;
-    margin-left: -15em;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 #footer {
