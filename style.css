@@ -4,9 +4,9 @@
 }
 
 html, body {
-    
     background-image: url(imgs/background.jpg);
     background-size : 100%;
+    background-position: absolute;
     text-align: center;
 }
 
