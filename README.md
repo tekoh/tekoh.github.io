@@ -1,5 +1,5 @@
 # tekohxd.github.io
-simple website to show my socials <br />
+simple website to show my diff accounts <br />
 
 shows: <br />
  - youtube
@@ -8,3 +8,5 @@ shows: <br />
  - steam
  - namemc
  - github
+ - discord
+ - imsg
