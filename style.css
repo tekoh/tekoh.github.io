@@ -1,0 +1,29 @@
+* {
+    font-family: 'Cascadia Code', monospace;
+    text-decoration: none;
+}
+
+html, body {
+    position: fixed;
+    height: 100%;
+    background-image: url(imgs/background.png);
+    text-align: center;
+}
+
+#content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 30em;
+    height:18em;
+    margin-top: -6em;
+    margin-left: -15em;
+}
+
+#footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+    text-align: center;
+}
