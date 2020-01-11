@@ -1,6 +1,7 @@
 * {
     font-family: 'Cascadia Code', monospace;
     text-decoration: none;
+    font-size: 1rem;
 }
 
 html {
@@ -36,6 +37,6 @@ body {
     position: fixed;
     width: 100%;
     bottom: 0;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-align: center;
 }
