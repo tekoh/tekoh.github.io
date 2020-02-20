@@ -16,6 +16,14 @@ html {
     background-repeat: no-repeat;
 }
 
+.text {
+    color: black;
+}
+
+.bot {
+    font-size: 0.8rem;
+}
+
 body {
     text-align: center;
     margin: 0;
