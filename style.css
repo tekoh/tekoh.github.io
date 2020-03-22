@@ -4,8 +4,7 @@
 }
 
 html {
-    background-color: black;
-    background-image: url(imgs/background.jpg);
+    background-color: #222222;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -27,6 +26,14 @@ html {
 body {
     text-align: center;
     margin: 0;
+}
+
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 #content {
