@@ -5,7 +5,7 @@
 
 html {
     background-color: #0e0e0e;
-    background-image: url("imgs/background.jpg");
+    background-image: url("imgs/background.png");
     position: fixed;
     top: 50%;
     left: 50%;
@@ -29,14 +29,6 @@ body {
     margin: 0;
 }
 
-#video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
-
 #content {
     position: absolute;
     left: 50%;
@@ -46,8 +38,8 @@ body {
 }
 
 #content img {
-    width: 13%;
-    margin: 15px;
+    width: 15%;
+    margin: 10px;
 }
 
 #footer {
