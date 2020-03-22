@@ -1,31 +1,10 @@
 <!DOCTYPE html>
 <html>
 
-<script>
-    function detectMob() {
-        const toMatch = [
-            /Android/i,
-            /webOS/i,
-            /iPhone/i,
-            /iPad/i,
-            /iPod/i,
-            /BlackBerry/i,
-            /Windows Phone/i
-        ];
-
-        return toMatch.some((toMatchItem) => {
-            return navigator.userAgent.match(toMatchItem);
-        });
-    }   
-    if (!detectMob()) {
-       location.replace("mobile.html")
-    }
-</script>
-
 <head>
     <title>Tekoh</title>
     <link rel="icon" href="https://minotar.net/avatar/Tekoh/16">
-    <link rel="stylesheet" type="text/css" href="style.css" >
+    <link rel="stylesheet" type="text/css" href="mobile.css" >
     <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
 </head>
 
@@ -35,13 +14,12 @@
         <p>bot.tekoh.wtf</p>
     </a>
 
-    <video autoplay muted loop id="video">
-        <source src="imgs/video.mp4" type="video/mp4">
-    </video>
-
     <div id="content">
 
-       
+        <video autoplay muted loop id="video">
+            <source src="imgs/mobilebackground.mp4" type="video/mp4">
+        </video>
+
         <a href="https://youtube.com/Tekohh"> 
             <img src="imgs/youtube.png" /> 
         </a>

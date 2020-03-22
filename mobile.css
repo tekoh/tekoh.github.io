@@ -20,7 +20,7 @@ html {
 }
 
 .bot {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
 }
 
 body {
@@ -41,17 +41,17 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1rem; 
+    font-size: 1.2rem; 
 }
 
 #content img {
-    width: 9%;
+    width: 13%;
 }
 
 #footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-    font-size: 0.875rem;
+    font-size: 1.2rem;
     text-align: center;
 }
