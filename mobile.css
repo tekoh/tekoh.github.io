@@ -20,13 +20,13 @@ html {
     color: black;
 }
 
-.bot {
-    font-size: 0.9rem;
-}
-
 body {
     text-align: center;
     margin: 0;
+}
+
+a {
+    color: black;
 }
 
 #content {
