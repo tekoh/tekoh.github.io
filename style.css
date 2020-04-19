@@ -1,5 +1,5 @@
 * {
-    font-family: 'Cascadia Code', 'Fire Code', monospace;
+    font-family: "Roboto", 'Cascadia Code', 'Fire Code', monospace;
     text-decoration: none;
 }
 
@@ -17,6 +17,10 @@ html {
 
 .text {
     color: black;
+}
+
+.discordName {
+    font-size: 1.7rem;
 }
 
 body {
