@@ -22,7 +22,7 @@
     }
 
     function randomVideo() {
-        const vid = Math.floor(Math.random() * 3) + 1
+        const vid = Math.floor(Math.random() * 7) + 1
         return "imgs/" + vid + ".mp4"
     }
 </script>
@@ -48,7 +48,6 @@
 
     <script>
         const player = document.getElementById("video")
-        const d = ["https://tekoh.wtf/imgs/1.mp4", "https://tekoh.wtf/imgs/2.mp4"]
 
         const vid = randomVideo()
 
