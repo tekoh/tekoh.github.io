@@ -20,11 +20,16 @@
     if (detectMob()) {
        location.replace("mobile.html")
     }
+
+    function randomVideo() {
+        const vid = Math.floor(Math.random() * 3) + 1
+        return "imgs/" + vid + ".mp4"
+    }
 </script>
 
 <head>
     <title>Tekoh</title>
-    <link rel="icon" href="imgs/top image.png">
+    <link rel="icon" href="imgs/top.png">
     <link rel="stylesheet" type="text/css" href="style.css" >
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,11 +40,24 @@
     <meta name="theme-color" content="#ff4857">
 </head>
 
+<video autoplay muted loop id="video">
+    <source id="vidSource" src="https://tekoh.wtf/imgs/1.mp4" type="video/mp4"/>
+</video>
+
 <body>
 
-    <video autoplay muted loop id="video">
-        <source src="imgs/video.mp4" type="video/mp4">
-    </video>
+    <script>
+        const player = document.getElementById("video")
+        const d = ["https://tekoh.wtf/imgs/1.mp4", "https://tekoh.wtf/imgs/2.mp4"]
+
+        const vid = randomVideo()
+
+        document.getElementById("vidSource").src = vid;
+
+        player.load()
+    </script>
+
+    
 
     <div id="content">
 
