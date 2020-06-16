@@ -46,11 +46,14 @@ a {
     top: 50%;
     transform: translate(-50%, -50%);
     font-size: 1rem;
-    width: 80%
+    width: 40%;
+    background-color: #17171717;
+    backdrop-filter: blur(0.5rem);
+    
 }
 
 #content img {
-    width: 7%;
+    width: 14%;
 }
 
 #footer {
