@@ -1,5 +1,5 @@
 * {
-    font-family: "Roboto", 'Cascadia Code', 'Fire Code', monospace;
+    font-family: "Roboto Slab", "Roboto", 'Cascadia Code', 'Fira Code', monospace;
     text-decoration: none;
 }
 
@@ -45,9 +45,9 @@ a {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1rem;
+    font-size: 1.1rem;
     width: 40%;
-    background-color: #17171717;
+    background-color: #2424242d;
     backdrop-filter: blur(0.5rem);
     
 }
