@@ -1,3 +1,4 @@
+
 * {
     font-family: "Roboto Slab", sans-serif;
     text-decoration: none;
@@ -59,7 +60,7 @@ a {
 #footer {
     position: absolute;
     width: 100%;
-    bottom: 10;
+    bottom: 5;
     font-size: 0.875rem;
     text-align: center;
 }
