@@ -56,11 +56,3 @@ a {
 #content img {
     width: 14%;
 }
-
-#footer {
-    position: absolute;
-    width: 100%;
-    bottom: 5;
-    font-size: 0.875rem;
-    text-align: center;
-}
