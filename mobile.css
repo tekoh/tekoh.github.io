@@ -1,11 +1,10 @@
 * {
-    font-family: "Roboto Slab", sans-serif;
     text-decoration: none;
+    color: white;
 }
 
 html {
     background-color: #0e0e0e;
-    background-image: url(imgs/background.jpg);
     position: fixed;
     top: 50%;
     left: 50%;
@@ -16,12 +15,18 @@ html {
     background-repeat: no-repeat;
 }
 
-.text {
-    color: black;
+.discordName {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 1.9rem;
 }
 
-.discordName {
+.text {
+    font-family: "Roboto Slab", sans-serif;
     font-size: 1.9rem;
+}
+
+.socials {
+    font-family: 'Roboto Mono', monospace;
 }
 
 body {
@@ -29,28 +34,11 @@ body {
     margin: 0;
 }
 
-a {
-    color: black;
-}
-
 #content {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.2rem;
+    font-size: 1rem;
     width: 80%
-}
-
-#content img {
-    width: 15%;
-    margin: 5px;
-}
-
-#footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    font-size: 0.9rem;
-    text-align: center;
 }
