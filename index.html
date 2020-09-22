@@ -46,14 +46,12 @@
         }, 1000);
     }
 
-    const timeout = 2000
+    const timeout = 1000
     let clicks = 0
     let lastClick, started
 
     function cpsCount() {
         const now = new Date().getTime()
-
-        console.log(`clicks: ${clicks}`)
 
         if (lastClick && now - lastClick >= timeout)  {
             clicks = 0
