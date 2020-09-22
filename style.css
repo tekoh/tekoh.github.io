@@ -17,13 +17,15 @@ html {
 }
 
 body {
+    height: 100%;
+    width: 100%;
     text-align: center;
     margin: 0;
 }
 
 .bot {
     color: black;
-    transition-duration: 0.3s;
+    transition-duration: 0.4s;
     font-size: 1.1rem;
 }
 
@@ -34,7 +36,7 @@ body {
 
 .discord {
     color: black;
-    transition-duration: 0.3s;
+    transition-duration: 0.5s;
     font-size: 1.7rem;
 }
 
@@ -57,16 +59,19 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 40%;
-    background-color: #5c5c5c2d;
+    background-color: #2b2b2b2d;
     backdrop-filter: blur(0.5rem);
-    transition: all;
-    transition-duration: 0.3s;
+    transition-duration: 1s;
+}
+
+#content:hover {
+    background-color: #1d1d1d60;
 }
 
 #content img {
     width: 14%;
     vertical-align: middle;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
 }
 
 #content img:hover {
