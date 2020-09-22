@@ -16,21 +16,31 @@ html {
     background-repeat: no-repeat;
 }
 
-.text {
-    color: black;
-}
-
-.discordName {
-    font-size: 1.7rem;
-}
-
 body {
     text-align: center;
     margin: 0;
 }
 
-a {
+.bot {
     color: black;
+    transition-duration: 0.3s;
+    font-size: 1.1rem;
+}
+
+.bot:hover {
+    color: white;
+    font-size: 1.9rem;
+}
+
+.discord {
+    color: black;
+    transition-duration: 0.3s;
+    font-size: 1.7rem;
+}
+
+.discord:hover {
+    color: white;
+    font-size: 2rem;
 }
 
 #video {
@@ -46,13 +56,19 @@ a {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.1rem;
     width: 40%;
-    background-color: #2424242d;
+    background-color: #5c5c5c2d;
     backdrop-filter: blur(0.5rem);
-    
+    transition: all;
+    transition-duration: 0.3s;
 }
 
 #content img {
     width: 14%;
+    vertical-align: middle;
+    transition-duration: 0.3s;
+}
+
+#content img:hover {
+    width: 17%;
 }
