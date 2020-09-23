@@ -62,10 +62,12 @@ body {
     background-color: #2b2b2b2d;
     backdrop-filter: blur(0.5rem);
     transition-duration: 1s;
+    border: solid 1px rgba(255, 255, 255, 0)
 }
 
 #content:hover {
     background-color: #1d1d1d60;
+    border: solid 1px rgba(255, 255, 255, 0.192)
 }
 
 #content img {
