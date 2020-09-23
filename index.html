@@ -61,12 +61,12 @@
 
         clicks++
 
+        const tag = document.getElementsByClassName("discord")[0]
+
         if (started) {
             lastClick = now
 
             let text = `CPS: ${calcCps()} (${clicks} clicks)`
-
-            const tag = document.getElementsByClassName("discord")[1]
 
             return tag.innerText = text
         } else {
@@ -76,8 +76,6 @@
                 clicks = 1
 
                 let text = `CPS: ${calcCps()} (${clicks} clicks)`
-
-                const tag = document.getElementsByClassName("discord")[1]
 
                 return tag.innerText = text
             }
@@ -124,8 +122,6 @@
 
         player.load()
     </script>
-
-    
 
     <div id="content">
 
