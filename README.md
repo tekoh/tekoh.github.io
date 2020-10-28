@@ -1,2 +1,7 @@
-# tekohxd.github.io
-simple website to show my diff accounts <br />
+# tekoh.wtf
+
+### 🍟 url
+[tekoh.wtf](https://tekoh.wtf)
+
+### 🍪 why
+shows my different social media accounts & looks cool
