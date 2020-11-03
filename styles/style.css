@@ -80,3 +80,12 @@ body {
 #content img:hover {
     width: 17%;
 }
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+    display: none !important;
+}
