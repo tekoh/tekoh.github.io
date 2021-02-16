@@ -23,13 +23,13 @@ body {
     margin: 0;
 }
 
-.bot {
+.link {
     color: black;
     transition-duration: 0.4s;
     font-size: 1.1rem;
 }
 
-.bot:hover {
+.link:hover {
     color: white;
     font-size: 1.9rem;
 }
@@ -88,4 +88,9 @@ body {
     -o-transition: none !important;
     transition: none !important;
     display: none !important;
+}
+
+p {
+    color: black;
+    font-size: 1.1rem;
 }
