@@ -1,7 +1,7 @@
 # tekoh.wtf
 
 ### 🍟 url
-[tekoh.wtf](https://tekoh.wtf)
+[tekoh.net](https://tekoh.net)
 
 ### 🍪 why
 shows my different social media accounts & looks cool
