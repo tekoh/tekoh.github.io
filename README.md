@@ -1,4 +1,6 @@
-# tekoh.wtf
+# tekoh.net
+
+#### status: complete
 
 ### 🍟 url
 [tekoh.net](https://tekoh.net)
