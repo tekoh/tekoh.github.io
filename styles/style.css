@@ -1,14 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400&family=Roboto:wght@300;400&display=swap');
+
+:root {
+    --bg-color: #1c1e26;
+    --bg-color-two: #181920;
+    --white-text-color: #BBBBBB;
+    --complimentary-one: #f73333;
+    --complimentary-two: #ff5656;
+}
 
 * {
-    font-family: "Roboto Slab", sans-serif;
     text-decoration: none;
     margin: 0rem;
     padding: 0rem;
 }
 
 body {
-    background-color: #1c1e26;
+    background-color: var(--bg-color);
 }
 
 main {
@@ -37,17 +44,56 @@ main {
     font-weight: 300;
     text-align: center;
     margin-top: 20vh;
-    color: #BBBBBB;
+    color: var(--white-text-color);
     text-shadow: 0px 0px 0.5rem rgba(0, 0, 0, 0.2);
     animation: fade-in 2s ease-in;
 }
 
+.hero-links {
+    margin-top: 0.7rem;
+    text-align: center;
+    color: var(--white-text-color);
+    font-family: "Roboto Mono", monospace;
+    font-size: 1rem;
+    animation: fade-in-slow 3s ease-in;
+}
+
 hr {
-    background: linear-gradient(to right, #f73333, #ff5656);
+    background: linear-gradient(to right, var(--complimentary-one), var(--complimentary-two));
     height: 2px;
     border: none;
     animation: hr-in 2s ease-out;
     margin: auto;
+}
+
+.fake-link {
+    cursor: pointer;
+}
+
+.notification {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -1100%);
+    z-index: 69;
+
+    height: 3rem;
+    min-width: 10rem;
+
+    color: var(--white-text-color);
+    background-color: var(--bg-color-two);
+
+    border-radius: 0.7rem;
+    border: solid 1px rgba(255, 255, 255, 0.25);
+    border-left: solid 5px var(--complimentary-one);
+
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+    padding: 0rem 1rem;
 }
 
 @keyframes fade-in {
@@ -55,6 +101,18 @@ hr {
         opacity: 0%;
     }
     to {
+        opacity: 100%;
+    }
+}
+
+@keyframes fade-in-slow {
+    0% {
+        opacity: 0%;
+    }
+    40% {
+        opacity: 0%
+    }
+    100% {
         opacity: 100%;
     }
 }
@@ -68,5 +126,34 @@ hr {
     }
     100% {
         width: 100%;
+    }
+}
+
+.notification-in {
+    animation: notification-in 1.5s;
+}
+
+@keyframes notification-in {
+    0% {
+        transform: translate(-50%, -1100%);
+    }
+    40% {
+        transform: translate(-50%, -900%);
+    }
+    100% {
+        transform: translate(-50%, -900%);
+    }
+}
+
+.notification-out {
+    animation: notification-out 0.4s;
+}
+
+@keyframes notification-out {
+    0% {
+        transform: translate(-50%, -900%);
+    }
+    100% {
+        transform: translate(-50%, -1100%);
     }
 }

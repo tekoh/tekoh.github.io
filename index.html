@@ -5,7 +5,7 @@
     <title>tekoh</title>
     <link rel="icon" href="content/top.png">
     <link rel="stylesheet" type="text/css" href="styles/style.css" >
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:type" content="tekoh.net">
     <meta property="og:title" content="tekoh" />
@@ -17,19 +17,28 @@
     <meta name="twitter:creator" content="xdtekoh">
     <meta name="twitter:description" content="tekoh.net">
     <meta name="twitter:title" content="tekoh.net">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
     <script src="js/script.js"></script>
 </head>
 
 <body class="preload" onselectstart="return false">
 
     <main>
+
+        <div class="notification" id="discord-notification">
+            <p>copied to clipboard</p>
+        </div>
+
         <div class="left"></div>
         <div class="center">
 
             <h1 class="hero">tekoh</h1>
 
             <hr>
+
+            <div class="hero-links">
+                <span class="fake-link" id="discord" onclick="copyDiscord();">max#0777</span>
+            </div>
 
 
         </div>
