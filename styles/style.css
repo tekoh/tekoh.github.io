@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400&display=swap');
 
 * {
-    font-family: "Roboto Slab", sans-serif;
     text-decoration: none;
     margin: 0rem;
     padding: 0rem;
@@ -42,12 +41,24 @@ main {
     animation: fade-in 2s ease-in;
 }
 
+.hero-links {
+    margin-top: 0.7rem;
+    text-align: center;
+    color: #BBBBBB;
+    font-family: "Roboto Mono", monospace;
+    font-size: 1rem;
+}
+
 hr {
     background: linear-gradient(to right, #f73333, #ff5656);
     height: 2px;
     border: none;
     animation: hr-in 2s ease-out;
     margin: auto;
+}
+
+.fake-link {
+    cursor: pointer;
 }
 
 @keyframes fade-in {
