@@ -1,4 +1,7 @@
 let copyNotificationShowing = false
+$(window).on("load", () => {
+    $("body").removeClass("preload")
+})
 
 function copyDiscord() {
     if (copyNotificationShowing) return

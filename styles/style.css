@@ -14,6 +14,15 @@
     padding: 0rem;
 }
 
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+    display: none !important;
+}
+
 body {
     background-color: var(--bg-color);
 }
@@ -50,12 +59,26 @@ main {
 }
 
 .hero-links {
-    margin-top: 0.7rem;
+    margin: 0.7rem;
     text-align: center;
     color: var(--white-text-color);
     font-family: "Roboto Mono", monospace;
     font-size: 1rem;
     animation: fade-in-slow 3s ease-in;
+}
+
+.hero-links * {
+    margin: 0rem 1rem;
+    color: var(--white-text-color);
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    /* text-decoration: underline solid var(--white-text-color) transparent; */
+    transition: 0.5s ease-out;
+}
+
+.hero-links *:hover {
+    color: white;
+    border-bottom: 2px solid var(--complimentary-two);
 }
 
 hr {
