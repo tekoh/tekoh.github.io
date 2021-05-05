@@ -126,3 +126,29 @@ hr {
         width: 100%;
     }
 }
+
+.notification-in {
+    animation: notification-in 2s ease-out;
+}
+
+@keyframes notification-in {
+    0% {
+        transform: translate(-50%, -1100%);
+    }
+    100% {
+        transform: translate(-50%, -900%);
+    }
+}
+
+.notification-out {
+    animation: notification-out 1s ease-out;
+}
+
+@keyframes notification-out {
+    0% {
+        transform: translate(-50%, -900%);
+    }
+    100% {
+        transform: translate(-50%, -1100%);
+    }
+}
