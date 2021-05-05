@@ -72,6 +72,7 @@ main {
     font-family: "Roboto Mono", monospace;
     font-size: 1rem;
     animation: fade-in-slow 3s ease-in;
+    overflow: hidden;
 }
 
 .hero-links * {
@@ -98,32 +99,6 @@ hr {
 
 .fake-link {
     cursor: pointer;
-}
-
-.notification {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -1100%);
-    z-index: 69;
-
-    height: 3rem;
-    min-width: 10rem;
-
-    color: var(--white-text-color);
-    background-color: var(--bg-color-two);
-
-    border-radius: 0.7rem;
-    border: solid 1px rgba(255, 255, 255, 0.25);
-    border-left: solid 5px var(--complimentary-one);
-
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    
-    padding: 0rem 1rem;
 }
 
 @keyframes fade-in {
@@ -156,35 +131,6 @@ hr {
     }
     100% {
         width: 100%;
-    }
-}
-
-.notification-in {
-    animation: notification-in 1.5s;
-}
-
-@keyframes notification-in {
-    0% {
-        transform: translate(-50%, -1100%);
-    }
-    40% {
-        transform: translate(-50%, -900%);
-    }
-    100% {
-        transform: translate(-50%, -900%);
-    }
-}
-
-.notification-out {
-    animation: notification-out 0.4s;
-}
-
-@keyframes notification-out {
-    0% {
-        transform: translate(-50%, -900%);
-    }
-    100% {
-        transform: translate(-50%, -1100%);
     }
 }
 

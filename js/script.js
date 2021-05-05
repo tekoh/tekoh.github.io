@@ -3,6 +3,8 @@ $(window).on("load", () => {
     $("body").removeClass("preload")
 })
 
+const stages = ["max#0777", "cax#077!", "cox#07!!", "cop#0d!!", "copied!!"]
+
 function copyDiscord() {
     if (copyNotificationShowing) return
     const el = document.createElement('textarea');
@@ -14,15 +16,34 @@ function copyDiscord() {
 
     copyNotificationShowing = true
 
-    $("#discord-notification").addClass("notification-in")
+    let i = 1
+
+    const interval1 = setInterval(() => {
+        if (!stages[i]) {
+            i = stages.length - 1
+            return clearInterval(interval1)
+        }
+        $("#discord")[0].innerText = stages[i]
+        i++
+    }, 50);
 
     setTimeout(() => {
-        $("#discord-notification").addClass("notification-out")
-    }, 1400)
+        console.log("boobies")
+        const interval2 = setInterval(() => {
+            if (!stages[i]) {
+                i = 1
+                copyNotificationShowing = false
+                return clearInterval(interval2)
+            }
+            $("#discord")[0].innerText = stages[i]
+            i--
+        }, 75)
+    }, 50 * stages.length + 3000)
 
-    setTimeout(() => {
-        $("#discord-notification").removeClass("notification-in")
-        $("#discord-notification").removeClass("notification-out")
-        copyNotificationShowing = false
-    }, 1800)
+    // // $("#discord")[0].innerText = "copied!!"
+
+    // setTimeout(() => {
+    //     copyNotificationShowing = false
+    //     $("#discord")[0].innerText = "max#0777"
+    // }, 4000)
 }
