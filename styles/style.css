@@ -12,6 +12,7 @@
     text-decoration: none;
     margin: 0rem;
     padding: 0rem;
+    overflow-x: hidden;
 }
 
 .preload * {
@@ -23,8 +24,14 @@
     display: none !important;
 }
 
+@media only screen and (min-width: 300px) and (orientation: portrait) {
+
+}
+
 body {
     background-color: var(--bg-color);
+    min-height: 100%;
+    min-width: 100%;
 }
 
 main {
@@ -178,5 +185,28 @@ hr {
     }
     100% {
         transform: translate(-50%, -1100%);
+    }
+}
+
+@media only screen and (min-width: 300px) and (orientation: portrait) {
+    .left {
+        display: none;
+    }
+
+    .center {
+        padding: 1rem;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .hero {
+        font-size: 5rem;
+    }
+
+    .hero-links * {
+        display: block;
+        margin: 1rem;
     }
 }
