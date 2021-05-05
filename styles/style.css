@@ -72,7 +72,7 @@ main {
     font-family: "Roboto Mono", monospace;
     font-size: 1rem;
     animation: fade-in-slow 3s ease-in;
-    overflow: hidden;
+    padding-bottom: 1rem;
 }
 
 .hero-links * {
