@@ -55,6 +55,7 @@ main {
     color: var(--white-text-color);
     font-family: "Roboto Mono", monospace;
     font-size: 1rem;
+    animation: fade-in-slow 3s ease-in;
 }
 
 hr {
@@ -73,7 +74,7 @@ hr {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -1100%);
 
     height: 3rem;
     width: 10rem;
@@ -97,6 +98,18 @@ hr {
         opacity: 0%;
     }
     to {
+        opacity: 100%;
+    }
+}
+
+@keyframes fade-in-slow {
+    0% {
+        opacity: 0%;
+    }
+    40% {
+        opacity: 0%
+    }
+    100% {
         opacity: 100%;
     }
 }
