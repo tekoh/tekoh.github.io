@@ -75,6 +75,7 @@ hr {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -1100%);
+    z-index: 69;
 
     height: 3rem;
     width: 10rem;
