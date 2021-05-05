@@ -1,28 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<script>
-    function detectMob() {
-        const toMatch = [
-            /Android/i,
-            /webOS/i,
-            /iPhone/i,
-            /iPad/i,
-            /iPod/i,
-            /BlackBerry/i,
-            /Windows Phone/i
-        ];
-
-        return toMatch.some((toMatchItem) => {
-            return navigator.userAgent.match(toMatchItem);
-        });
-    }   
-
-    if (detectMob()) {
-       location.replace("/mobile")
-    }
-</script>
-
 <head>
     <title>tekoh</title>
     <link rel="icon" href="content/top.png">
@@ -43,51 +21,22 @@
     <script src="js/script.js"></script>
 </head>
 
-<video autoplay muted loop id="video" onclick="cpsCount()">
-    <source id="vidSource" type="video/mp4"/>
-</video>
-
 <body class="preload" onselectstart="return false">
 
-    <script>
-        const player = document.getElementById("video")
+    <main>
+        <div class="left"></div>
+        <div class="center">
 
-        const vid = randomVideo()
+            <h1 class="hero">tekoh</h1>
 
-        document.getElementById("vidSource").src = vid;
+            <hr>
 
-        player.load()
-    </script>
 
-    <div id="content">
-        <p><a href="javascript:void(0);" onclick="copyTag();" class="discord" draggable="false">max#0777</a></p>
-       
-        <a href="https://youtube.com/Tekohh" draggable="false"> 
-            <img src="content/youtube.webp" draggable="false" /> 
-        </a>
-        
-        <a href="https://instagram.com/xdtekoh" draggable="false">
-            <img src="content/instagram.webp" draggable="false" />
-        </a>
+        </div>
+        <div class="right"></div>
+    </main>
 
-        <a href="https://snapchat.com/add/tekohh" draggable="false">
-            <img src="content/snapchat.webp" draggable="false" />
-        </a>
-
-        <a href="https://open.spotify.com/user/maxthemango" draggable="false">
-            <img src="content/spotify.webp" draggable="false" />
-        </a>
-
-        <a href="https://twitter.com/xdtekoh" draggable="false">
-            <img src="content/twitter.webp" draggable="false" />
-        </a>
-
-        <a href="https://github.com/tekoh" draggable="false">
-            <img src="content/github.webp" draggable="false" />
-        </a>
-
-        <p><a href="https://color.tekoh.net" class="link" draggable="false">colors</a> · <a href="https://nypsi.xyz" class="link" draggable="false">nypsi</a> · <a href="https://click.tekoh.net" class="link" draggable="false">clicktest</a></p>
-    </div>
+    
 
 </body>
 
