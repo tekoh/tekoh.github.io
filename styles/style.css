@@ -73,7 +73,7 @@ main {
     font-family: "Roboto Mono", monospace;
     font-size: 1rem;
     animation: fade-in-slow 3s ease-in;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 .hero-links *, a {
@@ -128,7 +128,7 @@ hr {
     position: absolute;
     left: 50%;
     bottom: 1%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, 10%);
     margin: 0 auto;
 }
 
@@ -196,10 +196,15 @@ hr {
 
     .hero {
         font-size: 5rem;
+        margin-top: 2rem;
     }
 
     .hero-links * {
         display: block;
         margin: 1rem;
+    }
+
+    .nypsi {
+        margin: 0;
     }
 }
