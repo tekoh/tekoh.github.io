@@ -119,6 +119,19 @@ hr {
     font-weight: 300;
 }
 
+.other {
+    font-size: 1rem;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    padding: 1rem;
+
+    position: absolute;
+    left: 50%;
+    bottom: 1%;
+    transform: translate(-50%, 0%);
+    margin: 0 auto;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
