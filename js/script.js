@@ -28,7 +28,6 @@ function copyDiscord() {
     }, 50);
 
     setTimeout(() => {
-        console.log("boobies")
         const interval2 = setInterval(() => {
             if (!stages[i]) {
                 i = 1

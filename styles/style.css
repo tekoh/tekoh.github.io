@@ -13,6 +13,7 @@
     margin: 0rem;
     padding: 0rem;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .preload * {
@@ -75,7 +76,7 @@ main {
     padding-bottom: 1rem;
 }
 
-.hero-links * {
+.hero-links *, a {
     margin: 0rem 1rem;
     color: var(--white-text-color);
     padding-bottom: 0.2rem;
@@ -84,7 +85,7 @@ main {
     transition: 0.5s ease-out;
 }
 
-.hero-links *:hover {
+.hero-links *:hover, a:hover {
     color: white;
     border-bottom: 2px solid var(--complimentary-two);
 }
@@ -99,6 +100,39 @@ hr {
 
 .fake-link {
     cursor: pointer;
+}
+
+.nypsi {
+    margin-top: 10rem;
+
+    font-family: "Roboto Mono", monospace;
+    color: var(--white-text-color);
+    text-align: center;
+
+    animation: fade-in-slow 4s ease-in;
+}
+
+.nypsi h1 {
+    padding-bottom: 0.3rem;
+
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--bg-color-two);
+    border-radius: 1rem;
 }
 
 @keyframes fade-in {
