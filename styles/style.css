@@ -33,6 +33,7 @@ body {
     background-color: var(--bg-color);
     min-height: 100%;
     min-width: 100%;
+    padding-bottom: 70vh;
 }
 
 main {
@@ -130,6 +131,17 @@ hr {
     bottom: 1%;
     transform: translate(-50%, 10%);
     margin: 0 auto;
+
+    animation: fade-in-slow 5s ease-in;
+}
+
+#links {
+    margin-top: 40vh;
+    animation: fade-in-slow 5s;
+}
+
+.other-header {
+    font-size: 5rem;
 }
 
 /* width */
