@@ -4,7 +4,7 @@ $(window).on("load", () => {
     $("body").removeClass("preload")
 
     const countdown =  () => {
-        const now = new Date(Date.parse("12/25/2021"))
+        const now = new Date()
 
         let year = now.getFullYear()
         const month = now.getMonth() + 1
