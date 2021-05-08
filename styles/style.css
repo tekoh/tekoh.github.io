@@ -238,4 +238,9 @@ hr {
     .nypsi {
         margin: 0;
     }
+
+    .countdown {
+        width: 100%;
+        font-size: 0.6rem;
+    }
 }
