@@ -95,15 +95,15 @@ function MStoTime(ms) {
     let output = ""
 
     if (days > 0) {
-        output += `${days} day${days > 1 ? "s" : ""}`
+        output += `${days} day${days > 1 ? "s" : ""} `
     }
 
     if (hours > 0) {
-        output += `${hours} hour${hours > 1 ? "s" : ""}`
+        output += `${hours} hour${hours > 1 ? "s" : ""} `
     }
 
     if (minutes > 0) {
-        output += `${minutes} minute${minutes > 1 ? "s" : ""}`
+        output += `${minutes} minute${minutes > 1 ? "s" : ""} `
     }
 
     output += `${sec} second${sec > 1 ? "s" : ""}`
