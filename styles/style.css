@@ -135,6 +135,25 @@ hr {
     animation: fade-in-slow 5s ease-in;
 }
 
+.countdown {
+    font-size: 1rem;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    padding: 1rem;
+
+    position: absolute;
+    left: 50%;
+    top: 1%;
+    transform: translate(-50%, -30%);
+    margin: 0 auto;
+
+    animation: fade-in-slow 5s ease-in;
+}
+
+.countdown p {
+    color: var(--white-text-color);
+}
+
 #links {
     margin-top: 40vh;
     animation: fade-in-slow 5s;
@@ -218,5 +237,10 @@ hr {
 
     .nypsi {
         margin: 0;
+    }
+
+    .countdown {
+        width: 100%;
+        font-size: 0.6rem;
     }
 }
