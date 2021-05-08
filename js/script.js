@@ -4,18 +4,19 @@ $(window).on("load", () => {
     $("body").removeClass("preload")
 
     const countdown =  () => {
-        const now = new Date()
+        const now = new Date(Date.parse("12/25/2021"))
 
-        const year = now.getFullYear()
+        let year = now.getFullYear()
         const month = now.getMonth() + 1
         const day = now.getDate()
 
         let targetDate, target, birthday, birthdayThing
 
-        if (month > 5 || (month == 5 && day >= 25)) {
+        if ((month > 5 && day < 25) || (month == 5 && day >= 25)) {
             targetDate = new Date(Date.parse(`12/25/${year}`))
             target = "christmas"
         } else {
+            if (month == 12) year++
             targetDate = new Date(Date.parse(`5/25/${year}`))
             target = "birthday"
             birthday = year - 2003
