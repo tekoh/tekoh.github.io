@@ -12,7 +12,7 @@ $(window).on("load", () => {
 
         let targetDate, target, birthday, birthdayThing
 
-        if (month > 5) {
+        if (month > 5 || (month == 5 && day >= 25)) {
             targetDate = new Date(Date.parse(`12/25/${year}`))
             target = "christmas"
         } else {
