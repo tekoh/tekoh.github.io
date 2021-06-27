@@ -12,6 +12,8 @@ $(window).on("load", () => {
 
         let targetDate, target, birthday, birthdayThing
 
+        console.log(month > 5 && month != 12, month == 12 && day < 25, month == 5 && day >= 25)
+
         if ((month > 5 && month != 12) || (month == 12 && day < 25) || (month == 5 && day >= 25)) {
             targetDate = new Date(Date.parse(`12/25/${year}`))
             target = "christmas"
